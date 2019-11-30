@@ -1,0 +1,71 @@
+/* src/pages/login/login.wxss */
+
+page {
+  background-color: rgb(240, 241, 246);
+}
+
+.mcontainer {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.image {
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
+}
+
+.box {
+  margin-top: 50rpx;
+}
+
+.xuehao {
+  display: flex;
+  justify-content: center;
+}
+
+.mima {
+  display: flex;
+  justify-content: center;
+}
+
+.shouji {
+  display: flex;
+  justify-content: center;
+}
+
+.login-input {
+  padding: 15rpx;
+  width: 500rpx;
+  margin-top: 15rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  z-index: 0;
+}
+
+.btn_login {
+  height: 70rpx;
+  width: 540rpx;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(53, 205, 96);
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.mask{
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 9000;
+
+}

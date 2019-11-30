@@ -1,0 +1,26 @@
+<view class="mcontainer">
+  <view class="mask" wx:if="{{hasMask}}" />
+  <view wx:else='{{!hasMask}}' style='text-align:center;margin-top:50px;'>
+    <view class="item">
+      <image src="/src/image/logo.jpg" class="image" />
+    </view>
+
+    <view class="box">
+      <form bindsubmit="formSubmit">
+        <view class="xuehao">
+          <input name="number" class="login-input" type="text" placeholder="请输入学号或者工号" />
+        </view>
+        <view class="mima">
+          <input name="password" class="login-input" type="password" placeholder="请输入密码" />
+        </view>
+        <view class="shouji">
+          <input name="phone" class="login-input" type="number" placeholder="请输入手机号" />
+        </view>
+
+        <button class="btn_login" form-type="submit" style="color: white;" bindtap="showPopup">提交</button>
+        <popup id='popup' title='申请结果' content='{{key}}' btn_ok='好的' bind:error="_error" bind:success="_success">
+        </popup>
+      </form>
+    </view>
+  </view>
+</view>

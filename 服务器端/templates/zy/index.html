@@ -1,0 +1,168 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>蜜罐 | 主页</title>
+        <meta name="description" content="Union is a beautiful Bootstrap 4 template for multipurpose landing pages." /> 
+
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i" rel="stylesheet">
+
+        <!--vendors styles-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap CSS / Color Scheme -->
+        <link rel="stylesheet" href="{% load static 'css/default.css' %}" id="theme-color">
+
+        <style>
+            #footer {
+                /* height: 40px; */
+                /* line-height: 40px; */
+                /* position: fixed; */
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                /* background: #333; */
+                color: rgb(68, 61, 61);
+                /* font-family: Arial; */
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <!--navigation-->
+        <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top sticky-navigation">
+            <a class="navbar-brand mx-auto" href="index.html">
+                Honeypot
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" 
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#use">Use</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#process">预留照片位</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="http://github.com/Alice-py">GitHub</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <p class="mb-0 mx-3"><a class="page-scroll font-weight-bold" href="http://honeypot.work:8000/admin">Admin</a></p>
+                </form>
+            </div>
+        </nav>
+
+        <!--hero header-->
+        <section class="pt-7 pt-md-8" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto my-auto text-center">
+                        <h1>欢迎使用本管理系统 | 蜜罐</h1>
+                        <p class="lead mt-4 mb-5">
+                            感谢 <b>学校</b> 给予的展示机会,本系统承诺 <b>永久开源</b>
+							
+                        </p>
+                        <p><img class="img-fluid" src="{% load static 'img/mockup.png' %}" alt="Mockup" /></p>
+						<p>蜜罐小队成员：林浩鹏(队长)、梁伟锋、陈宇豪</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       <!-- about section -->
+        <section class="pb-7" id="about">
+            <div class="container">
+                <hr class="my-6"/>
+                <div class="row">
+                    <div class="col-md-6 mx-auto text-center">
+                        <h4 class="dot-circle font-weight-normal">蜜罐智能锁系统架构介绍</h4>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6 order-2 order-md-1 my-md-auto">
+                        <h3>采用MVT架构</h3>
+                        <p class="text-muted lead">
+							用户视图与管理视图分开, 管理与智能锁的API不开放, 保证管理端的安全.
+                            本管理系统采用MVT架构, 耦合性高, 体系结构简单明了,方便后续业务扩展.
+                        </p>
+                        <a href="http://honeypot.work:8000/admin" class="btn btn-primary">Start Admin</a>
+                    </div>
+                    <div class="col-md-6 order-1 order-md-2">
+                        <img src="img/google-design.jpeg" class="img-fluid d-block mx-auto" alt="Google Design"/>
+                    </div>
+                    <div class="col-md-6 order-3 mx-auto border-top border-bottom mt-5 mt-md-0 py-4">
+                    	<p> &nbsp;
+                    	<p> &nbsp;
+
+                    	
+                    	
+                        <div class="review text-center">
+                            <p class="quote">本服务部署于CentOS 7上, 采用虚拟环境 + Django框架.部署方便简单, 但并不保证其他系统可部署成功.</p>
+                            <div class="mt-4 d-flex flex-row align-items-center justify-content-center">
+                                <img src="img/client-1.jpg" class="img-review rounded-circle mr-2" alt="Client 1"/>
+                                <span class="text-muted">Simple is better than complex.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id='use'>
+                    
+                    <div class="col-md-6">
+                            <p> &nbsp;
+                                    <p> &nbsp;
+                        <img src="img/facebook-messenger.jpeg" class="img-fluid d-block mx-auto" alt="Facebook Messenger"/>
+                    </div>
+                    <div class="col-md-6 my-md-auto">
+                        <h3>如何使用？</h3>
+                        <p class="text-muted lead">
+                            第一步：微信扫描二维码，点击申请体验</p>
+                        <p class="text-muted lead">
+                            第二步：等待管理员同意</p>
+                        <p class="text-muted lead">
+                            第三步：再次扫描二维码，开始体验
+                        </p>
+                        <a href="https://open.weixin.qq.com/sns/getexpappinfo?appid=wx3815f80986c1353f&path=src/pages/login/login.html#wechat-redirect" class="btn btn-primary">Start using</a>
+                    </div>
+                    <div class="col-md-6 mx-auto border-top border-bottom mt-5 mt-md-0 py-4">
+                            <p> &nbsp;
+                                    <p> &nbsp;
+                        <div class="review text-center">
+                            <p class="quote">由于小程序发布必须跑Https协议，签证需要提供真实信息与审核，时间关系，本小程序暂时未发布正式版.</p>
+                            
+                            <div class="mt-4 d-flex flex-row align-items-center justify-content-center">
+
+                                <img src="img/client-1.jpg" class="img-review rounded-circle mr-2" alt="Client 2"/>
+                                <span class="text-muted">Beautiful is better than ugly.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="footer">本网站仅供作品展示使用</div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.5.0/feather.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
